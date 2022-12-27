@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package increment;
+
+option go_package = "https://github.com/MalteBlackN/27decTrial; increment";
+
+service IncrementService {
+    rpc increment (value) returns (value) {}    
+}
+
+message value {
+    int32 value = 1;
+}
